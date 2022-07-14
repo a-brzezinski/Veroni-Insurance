@@ -1,6 +1,6 @@
 # Veroni-Insurance
 
-A static website design using ViteJS to build. Project created with technologies such as SCSS with BEM methodology, JavaScript, HTML 
+A static website design using ViteJS to build. Project created with technologies such as SCSS with BEM methodology,HTML. 
 
 Live Demo available here: https://veroni-insurance.netlify.app/
 
