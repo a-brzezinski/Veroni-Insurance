@@ -1,0 +1,85 @@
+%btn {
+	display: block;
+	padding: 1em 2em;
+	font-size: 2rem;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 4px;
+	background-color: $main-blue;
+	border-radius: 2em;
+	cursor: pointer;
+	transition: 0.5s;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.header {
+	position: relative;
+	&__content {
+		height: 90vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+
+		&__heading {
+			font-size: 4rem;
+			font-weight: 700;
+		}
+
+		&__text {
+			margin-top: 1em;
+			font-weight: 300px;
+			font-size: 2rem;
+		}
+
+		&__button {
+			position: relative;
+			@extend %btn;
+		}
+	}
+}
+
+.nav {
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2em;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+
+		&__name {
+			font-size: 2rem;
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+
+		i {
+			font-size: 2.5rem;
+			color: $main-blue;
+			margin-right: 0.1em;
+		}
+	}
+
+	&__btn {
+		padding: 0.5em 1.5em;
+		text-decoration: none;
+		font-size: 2rem;
+		color: $main-blue;
+		letter-spacing: 1px;
+		border: 1px solid $main-blue;
+		border-radius: 2rem;
+		cursor: pointer;
+		transition: 0.5s;
+
+		&:hover {
+			color: white;
+			background-color: $main-blue;
+		}
+	}
+}

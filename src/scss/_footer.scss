@@ -1,0 +1,116 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5em;
+	color: white;
+	background-color: $black-font;
+	padding: 1em;
+
+	&__newsletter {
+		margin-top: 5em;
+		&__heading {
+			text-transform: uppercase;
+			font-size: 3rem;
+			letter-spacing: 1px;
+		}
+
+		&__text {
+			font-size: 1.5rem;
+		}
+
+		&__form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 3em;
+
+			input {
+				width: 80%;
+				padding: 1em;
+				border: none;
+				border-radius: 4px;
+			}
+
+			button {
+				font-size: 1.5em;
+				font-weight: bold;
+				margin-top: 1em;
+				border: none;
+				background: none;
+				color: white;
+				background-color: $main-blue;
+				padding: 1em 3em;
+				border-radius: 4px;
+			}
+		}
+	}
+
+	&__info {
+		padding: 1em;
+		margin-top: 3em;
+
+		&__logo {
+			display: flex;
+			align-items: center;
+		}
+
+		&__heading {
+			font-size: 3rem;
+			margin-left: 0.1em;
+			letter-spacing: 1px;
+		}
+
+		i {
+			font-size: 3rem;
+			color: $main-blue;
+		}
+
+		&__text {
+			font-size: 1.5rem;
+		}
+		&__contact {
+			margin-top: 2em;
+			font-size: 2rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			i {
+				color: $main-blue;
+				margin-right: 0.3em;
+				text-align: center;
+			}
+			p {
+				margin-top: 0.5em;
+			}
+		}
+
+		&__socials {
+			margin-top: 1em;
+			display: flex;
+			justify-content: space-around;
+			font-size: 3rem;
+
+			i {
+				cursor: pointer;
+			}
+		}
+	}
+	&__author {
+		margin-top: 2em;
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+@media (min-width: 1200px) {
+	.footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		&__info {
+			grid-row: 1/3;
+		}
+	}
+}

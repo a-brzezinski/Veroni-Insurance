@@ -1,0 +1,112 @@
+// Community
+
+.community {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__card {
+		padding: 3em;
+		margin-bottom: 9em;
+		text-align: center;
+
+		&__amount {
+			font-weight: 700;
+			font-size: 9rem;
+		}
+
+		&__text {
+			font-weight: 300;
+			font-size: 3rem;
+			color: $gray;
+		}
+
+		i {
+			align-self: flex-start;
+			font-size: 5rem;
+			color: $main-blue;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.community {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+// Offer section
+
+.offer {
+	margin-top: 10em;
+	display: flex;
+	flex-direction: column;
+	padding: 3em;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 5em;
+		&__img {
+			width: 350px;
+		}
+
+		&__heading {
+			font-size: 3rem;
+			letter-spacing: 1px;
+		}
+
+		&__text {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.offer {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+			margin-bottom: 10em;
+
+			&__img {
+				width: 500px;
+			}
+
+			&__wrapp {
+				max-width: 600px;
+			}
+
+			&:nth-child(2) {
+				flex-direction: row-reverse;
+			}
+
+			&:nth-child(4) {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+}
+
+// Interest
+
+.interest {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2em;
+	&__heading {
+		font-size: 5rem;
+	}
+
+	&__button {
+		margin-top: 2em;
+		@extend %btn;
+		width: 300px;
+	}
+}
